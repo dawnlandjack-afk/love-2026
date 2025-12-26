@@ -8,9 +8,10 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #000;
-            color: #fff;
-            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #a8e6ff, #ffcce6, #ffd1dc, #ffffff);
+            background-attachment: fixed;
+            color: #333;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
             overflow: hidden;
         }
         .slider {
@@ -30,37 +31,46 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: rgba(0, 0, 0, 0.6);
             position: relative;
+            background: rgba(255, 255, 255, 0.75); /* 半透明白色叠加层，让文字更易读 */
+            backdrop-filter: blur(8px);
         }
         .slide img {
-            max-width: 100%;
-            max-height: 80vh;
+            max-width: 92%;
+            max-height: 75vh;
             object-fit: contain;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
         .caption {
-            margin-top: 30px;
+            margin-top: 35px;
             font-size: 28px;
             text-align: center;
-            padding: 0 20px;
+            padding: 0 30px;
             max-width: 90%;
             font-style: italic;
-            opacity: 0.9;
+            color: #444;
+            line-height: 1.5;
         }
         .title {
             position: absolute;
-            top: 50px;
-            font-size: 36px;
+            top: 60px;
+            font-size: 38px;
             font-weight: bold;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            color: #d81e5b;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
         }
         .footer {
             position: absolute;
             bottom: 50px;
             font-size: 20px;
-            opacity: 0.8;
+            color: #666;
+        }
+        .hint {
+            position: absolute;
+            bottom: 80px;
+            font-size: 18px;
+            color: #888;
         }
     </style>
 </head>
@@ -70,7 +80,8 @@
             <div class="title">亲爱的Shiyu，2026年快乐！</div>
             <img src="https://youke2.picui.cn/s1/2025/12/26/694df8b4caebd.jpg" alt="我们的周年纪念">
             <div class="caption">就像朱迪和尼克一样，我们在一起就是最完美的组合。谢谢你陪我走过每一天，我的宝贝。</div>
-            <div class="footer">滑动查看更多 →</div>
+            <div class="hint">← 向左滑动查看更多 →</div>
+            <div class="footer">滑动查看更多</div>
         </div>
         
         <div class="slide">
