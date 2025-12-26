@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026年的专属惊喜 ♡</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #fff0f8, #e6f0ff);
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+        .hearts {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .heart {
+            position: absolute;
+            font-size: 20px;
+            animation: float 12s infinite linear;
+            opacity: 0.6;
+        }
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.6; }
+            90% { opacity: 0.6; }
+            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        }
+        .slider {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+            z-index: 2;
+        }
+        .slides {
+            display: flex;
+            width: 700%;
+            height: 100%;
+            transition: transform 0.4s ease-in-out;
+        }
+        .slide {
+            min-width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .slide img {
+            width: 90%;
+            max-width: 420px;
+            max-height: 65vh;
+            object-fit: cover;
+            border-radius: 28px;
+            box-shadow: 0 20px 40px rgba(255, 105, 180, 0.25);
+            margin-bottom: 40px;
+        }
+        .caption {
+            font-size: 1.55em;
+            line-height: 1.8;
+            color: #d63384;
+            text-align: center;
+            max-width: 90%;
+            font-weight: 600;
+            text-shadow: 0 2px 8px rgba(255,255,255,0.6);
+        }
+        .dots {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 12px;
+            z-index: 3;
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            background: rgba(255,105,180,0.4);
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+        .dot.active {
+            background: #ff69b4;
+            transform: scale(1.4);
+        }
+        header {
+            position: fixed;
+            top: 40px;
+            width: 100%;
+            text-align: center;
+            color: #d63384;
+            font-size: 2.2em;
+            z-index: 3;
+            text-shadow: 0 2px 10px rgba(255,255,255,0.8);
+        }
+        footer {
+            position: fixed;
+            bottom: 80px;
+            width: 100%;
+            text-align: center;
+            color: #ff69b4;
+            font-size: 1em;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="hearts">
+        <div class="heart" style="left:15%; animation-delay:0s;">♡</div>
+        <div class="heart" style="left:30%; animation-delay:4s;">♡</div>
+        <div class="heart" style="left:50%; animation-delay:8s;">♡</div>
+        <div class="heart" style="left:70%; animation-delay:2s;">♡</div>
+        <div class="heart" style="left:85%; animation-delay:6s;">♡</div>
+    </div>
+    <header>2026年的专属惊喜 ♡</header>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="https://youke2.picui.cn/s1/2025/12/26/694df47462203.jpg" alt="蓝色花束">
+                <div class="caption">你送我的蓝色妖姬，像天空一样温柔，从此我的世界只开这一种颜色。</div>
+            </div>
+            <div class="slide">
+                <img src="https://youke2.picui.cn/s1/2025/12/26/694df46f96495.jpg" alt="比耶牵手">
+                <div class="caption">十指相扣，比出全世界最幸福的yeah，因为赢家永远是我们。</div>
+            </div>
+            <div class="slide">
+                <img src="https://youke2.picui.cn/s1/2025/12/26/694df8b4caebd.jpg" alt="电影院周年纪念">
+                <div class="caption">又一年，和你一起看《疯狂动物城》，原来最疯狂的不是动物，是我爱你的心。</div>
+            </div>
+            <div class="slide">
+                <img src="https://youke2.picui.cn/s1/2025/12/26/694df93da6865.jpg" alt="动漫自拍">
+                <div class="caption">如果我们是二次元情侣，我一定每天都给你画最甜的自拍背景。</div>
+            </div>
+            <div class="slide">
+                <img src="https://youke2.picui.cn/s1/2025/12/26/694df93cc208a.jpg" alt="动漫合照">
+                <div class="caption">漫画里的我们，也在认真地相爱着呢。</div>
+            </div>
+            <div class="slide">
+                <img src="https://youke2.picui.cn/s1/2025/12/26/694df93f7e0c9.jpg" alt="手放在胸口">
+                <div class="caption">把你的手放在我心口，它只为你跳得这么快，这么稳。</div>
+            </div>
+            <div class="slide">
+                <img src="https://youke2.picui.cn/s1/2025/12/26/694df93e911b6.jpg" alt="比心">
+                <div class="caption">比心不是姿势，是我每时每刻都在对你说：我爱你。</div>
+            </div>
+        </div>
+    </div>
+    <div class="dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <footer>To my forever love ♡ 2026</footer>
+    <script>
+        const slides = document.querySelector('.slides');
+        const dots = document.querySelectorAll('.dot');
+        let current = 0;
+        const total = 7;
+        function goToSlide(n) {
+            current = (n + total) % total;
+            slides.style.transform = `translateX(-${current * 100}vw)`;
+            dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
+        }
+        let startX = 0;
+        document.addEventListener('touchstart', e => startX = e.touches[0].clientX, {passive: true});
+        document.addEventListener('touchend', e => {
+            let endX = e.changedTouches[0].clientX;
+            if (startX - endX > 50) goToSlide(current + 1);
+            if (endX - startX > 50) goToSlide(current - 1);
+        });
+        let isDown = false;
+        let startMouseX = 0;
+        document.addEventListener('mousedown', e => { isDown = true; startMouseX = e.clientX; });
+        document.addEventListener('mouseup', e => {
+            if (!isDown) return;
+            isDown = false;
+            if (startMouseX - e.clientX > 50) goToSlide(current + 1);
+            if (e.clientX - startMouseX > 50) goToSlide(current - 1);
+        });
+    </script>
+</body>
+</html>
+
