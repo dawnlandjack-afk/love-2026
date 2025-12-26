@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>致我最爱的Shiyu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg, #a8e6ff, #ffcce6, #ffd1dc, #ffffff);
             background-attachment: fixed;
-            color: #333;
-            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            color: #444;
+            font-family: 'Noto Sans SC', sans-serif;
             overflow: hidden;
         }
         .slider {
@@ -32,56 +33,79 @@
             justify-content: center;
             align-items: center;
             position: relative;
-            background: rgba(255, 255, 255, 0.75); /* 半透明白色叠加层，让文字更易读 */
-            backdrop-filter: blur(8px);
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
         }
         .slide img {
             max-width: 92%;
             max-height: 75vh;
             object-fit: contain;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
         }
         .caption {
-            margin-top: 35px;
-            font-size: 28px;
+            margin-top: 40px;
+            font-size: 26px;
             text-align: center;
             padding: 0 30px;
             max-width: 90%;
-            font-style: italic;
-            color: #444;
-            line-height: 1.5;
+            line-height: 1.6;
+            color: #5a3f7c; /* 深紫粉色，浪漫又优雅 */
+            font-family: 'Dancing Script', cursive;
+            font-weight: 600;
         }
-        .title {
-            position: absolute;
-            top: 60px;
-            font-size: 38px;
-            font-weight: bold;
-            color: #d81e5b;
-            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+        /* 标题页专用样式 */
+        .title-slide {
+            background: rgba(255, 255, 255, 0.8);
         }
-        .footer {
-            position: absolute;
-            bottom: 50px;
-            font-size: 20px;
-            color: #666;
+        .big-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 56px;
+            font-weight: 700;
+            color: #d81e5b; /* 浪漫玫瑰红 */
+            text-align: center;
+            text-shadow: 2px 2px 10px rgba(255, 105, 180, 0.3);
+            margin-bottom: 20px;
+        }
+        .subtitle {
+            font-size: 32px;
+            color: #8a4baf;
+            font-family: 'Dancing Script', cursive;
+            margin-bottom: 50px;
         }
         .hint {
             position: absolute;
-            bottom: 80px;
+            bottom: 40px;
             font-size: 18px;
+            color: #999;
+            font-style: italic;
+        }
+        .footer {
+            position: absolute;
+            bottom: 40px;
+            font-size: 20px;
             color: #888;
+            font-family: 'Dancing Script', cursive;
         }
     </style>
 </head>
 <body>
     <div class="slider">
+        <!-- 第一页：独立标题页 -->
+        <div class="slide title-slide">
+            <div class="big-title">亲爱的Shiyu</div>
+            <div class="subtitle">2026年快乐</div>
+            <div style="font-size: 28px; color: #d81e5b; font-family: 'Dancing Script', cursive;">
+                这是我为你准备的小小惊喜<br>
+                每一张照片，都藏着我对你的爱
+            </div>
+            <div class="hint">向右滑动，开始我们的回忆 →</div>
+        </div>
+
+        <!-- 照片页 -->
         <div class="slide">
-            <div class="title">亲爱的Shiyu，2026年快乐！</div>
             <img src="https://youke2.picui.cn/s1/2025/12/26/694df8b4caebd.jpg" alt="我们的周年纪念">
             <div class="caption">就像朱迪和尼克一样，我们在一起就是最完美的组合。谢谢你陪我走过每一天，我的宝贝。</div>
-            <div class="hint">← 向左滑动查看更多 →</div>
-            <div class="footer">滑动查看更多</div>
         </div>
         
         <div class="slide">
@@ -116,7 +140,7 @@
         
         <div class="slide">
             <img src="https://youke2.picui.cn/s1/2025/12/26/694df94f03dfe.jpg" alt="夜空拥抱">
-            <div class="caption">在星空下拥抱你，是我这辈子最幸福的事。Shiyu，我爱你，到永远。</div>
+            <div class="caption">在星空下拥抱你，是我这辈子最幸福的事。<br>Shiyu，我爱你，到永远。</div>
             <div class="footer">——你的宝贝，2026年</div>
         </div>
     </div>
